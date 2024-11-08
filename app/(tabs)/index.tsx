@@ -34,7 +34,9 @@ export default function Example() {
             Welcome to <Text style={{ color: "#00C6AE" }}>SoSoSafe</Text>
           </Text>
 
-          <Text style={styles.subtitle}>Collaborate with your friends</Text>
+          <Text style={styles.subtitle}>
+            Use your camera phone to baby proof your home
+          </Text>
         </View>
 
         <View style={styles.form}>
