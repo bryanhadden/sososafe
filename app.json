@@ -4,6 +4,7 @@
     "slug": "soso",
     "version": "1.0.0",
     "orientation": "portrait",
+    "owner": "bryanhadden",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
@@ -31,6 +32,20 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "530c6170-4735-4e59-856a-ac2b2370999d"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/530c6170-4735-4e59-856a-ac2b2370999d"
     }
   }
 }
