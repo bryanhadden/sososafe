@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { router, Navigator } from 'expo-router';
 import {
   StyleSheet,
   SafeAreaView,
@@ -8,12 +9,11 @@ import {
   TouchableOpacity,
   Image
 } from 'react-native';
-import FeatherIcon from 'react-native-vector-icons/Feather';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const INPUT_OFFSET = 110;
 
-export default function Example() {
+export default function Example({ navigation }: any) {
   const [form, setForm] = useState({
     email: '',
     password: '',
@@ -24,7 +24,7 @@ export default function Example() {
         <View style={styles.header}>
             <View style={styles.headerIcon}>
               <Image
-              source={require('../../assets/images/icon.png')}
+              source={require('../assets/images/icon.png')}
               style={{ width: "100%", height: "100%", borderRadius: 16 }}
               resizeMode="cover"
               />
@@ -72,7 +72,7 @@ export default function Example() {
           <View style={styles.formAction}>
             <TouchableOpacity
               onPress={() => {
-                // handle onPress
+                router.replace("/home");
               }}>
               <View style={styles.btn}>
                 <Text style={styles.btnText}>Sign in</Text>
@@ -93,7 +93,6 @@ export default function Example() {
                   style={{ marginRight: 12 }} />
 
                 <Text style={styles.btnSecondaryText}>Face ID</Text>
-
                 <View style={{ width: 34 }} />
               </View>
             </TouchableOpacity>
