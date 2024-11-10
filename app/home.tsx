@@ -160,11 +160,13 @@ export default function Example() {
 
             <TouchableOpacity
               onPress={() => {
-                // handle onPress
+                router.replace("/scan");
               }}
               style={{ flex: 1, paddingHorizontal: 6 }}>
               <View style={styles.btnPrimary}>
-                <Text style={styles.btnPrimaryText}>Scan Room</Text>
+                <Text style={styles.btnPrimaryText}>
+                  Scan Room
+                </Text>
               </View>
             </TouchableOpacity>
           </View>

@@ -4,7 +4,7 @@
     "slug": "sososafe",
     "version": "1.0.0",
     "orientation": "portrait",
-    "owner": "sososafe",
+    "owner": "sososafeadmin",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
@@ -14,7 +14,8 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sososafe.sososafe"
     },
     "android": {
       "adaptiveIcon": {
@@ -38,7 +39,7 @@
         "origin": false
       },
       "eas": {
-        "projectId": "2770c444-16ff-4925-abec-6677c77084e9"
+        "projectId": "014c314d-a0b1-45d6-8915-86421e2f6783"
       }
     },
     "runtimeVersion": {
